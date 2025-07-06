@@ -20,11 +20,11 @@ A beautifully designed, mobile-friendly **Quote Generator App** that fetches ins
 ## 📂 Project Structure
 - quote-generator/
 - ├── data/
-- │ └── quotes.json      # Local quotes database
+- │    └── quotes.json      # Local quotes database
 - ├── public/
-- │ ├── index.html       # Main HTML UI
-- │ ├── style.css        # Styling and theme
-- │ └── script.js        # Quote logic and interactions
+- │    ├── index.html       # Main HTML UI
+- │    ├── style.css        # Styling and theme
+- │    └── script.js        # Quote logic and interactions
 - └── README.md
 
 ---
@@ -41,26 +41,26 @@ cd quote-generator
 ### 2. Open in browser
 Use the Live Server extension in VS Code, or open public/index.html manually in your browser.
 
-# 🔧 Customization
+## 🔧 Customization
 - Add more quotes to data/quotes.json
 - Change colors or fonts in style.css
 - Replace emoji icons with your own SVG or PNG assets
 
-# 🌐 Live Demo
+## 🌐 Live Demo
 [👉 Try it now]
 
-# 🛠 Built With
+## 🛠 Built With
 - HTML5 + CSS3 + JavaScript
 - html2canvas for image export
 - Responsive Design Principles
 
-# 📸 Screenshots
+## 📸 Screenshots
 [!Light Mode](light_mode.png)
 
 
 [!Dark  Mode](dark_mode.png)
 
-# 🌟 Support
+## 🌟 Support
 If you like this project:
 - 👉 Give it a ⭐
 - 👉 Share with your friends
