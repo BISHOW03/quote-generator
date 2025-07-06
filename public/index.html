@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🧘 Quote of the Day</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+
+  <div class="quote-container" id="quote-box">
+    <h1>🧘 Quote of the Day</h1>
+    <div class="quote-box">
+      <p id="quote-text">An ounce of prevention is worth a pound of cure.</p>
+      <span id="quote-author">― Benjamin Franklin</span>
+    </div>
+
+    <div class="controls">
+      <button onclick="newQuote()">🔄 Generate New Quote</button>
+      <button class="small-btn" onclick="copyQuote()">📋</button>
+      <div class="social">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" onclick="shareTwitter()" title="Share on Twitter">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" onclick="shareFacebook()" title="Share on Facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" onclick="shareWhatsApp()" title="Share on WhatsApp">
+      </div>
+      <button onclick="downloadQuote()">📥 Download as Image</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

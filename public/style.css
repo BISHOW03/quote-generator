@@ -1,0 +1,236 @@
+/* Root theme colors */
+:root {
+  --primary: #6C63FF;
+  --secondary: #FF6B81;
+  --text-dark: #1e1e1e;
+  --text-light: #f9f9f9;
+  --bg: linear-gradient(to right, #fdfbfb, #ebedee);
+  --glass: rgba(255, 255, 255, 0.2);
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #c3ecf3, #ffe6e6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  color: var(--text-dark);
+}
+
+/* Quote Container */
+.quote-container {
+  background: #ffffffcc;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 25px;
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.quote-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+/* Quote Box */
+.quote-box {
+  background: #f7f7f7;
+  border-left: 6px solid var(--primary);
+  padding: 1.8rem 1.2rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#quote-author {
+  display: block;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #555;
+  font-weight: 400;
+}
+
+/* Buttons */
+button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(108, 99, 255, 0.3);
+}
+
+button:hover {
+  background: var(--secondary);
+  transform: scale(1.05);
+}
+
+/* Small Circular Button */
+.small-btn {
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background: #ff6b81;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.small-btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* Social Icons */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.social img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  filter: grayscale(0.7);
+  transition: 0.3s ease;
+}
+
+.social img:hover {
+  filter: grayscale(0) drop-shadow(0 0 6px rgba(0,0,0,0.2));
+  transform: scale(1.1);
+}
+
+/* Dark Mode Toggle */
+.dark-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  border-radius: 2000%;
+  display: flex;
+  cursor: pointer;
+}
+
+/* .dark-toggle {
+  position: absolute;
+  top: 20px;  
+  right: 20px;
+  z-index: 10;
+  font-size: 1.3rem;
+  background: #ffffffcc;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+} */
+
+.dark-toggle:hover {
+  background: #d9d1d1;
+}
+
+
+/* Download Button */
+.controls button:last-child {
+  margin-top: 1.2rem;
+  background: linear-gradient(to right, #6C63FF, #FF6B81);
+  box-shadow: 0 5px 20px rgba(255, 107, 129, 0.4);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: var(--text-light);
+}
+
+body.dark-mode .quote-container {
+  background: #202040cc;
+  color: #eee;
+}
+
+body.dark-mode .quote-box {
+  background: #2c2c54;
+  border-left: 6px solid #90caf9;
+  color: #eee;
+}
+
+body.dark-mode #quote-author {
+  color: #bbb;
+}
+
+body.dark-mode button {
+  background: #90caf9;
+  color: #000;
+}
+
+body.dark-mode .small-btn {
+  background: #ffcccb;
+}
+
+body.dark-mode .social img {
+  filter: brightness(0.9);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .quote-container {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+  }
+
+  .quote-container h1 {
+    font-size: 1.5rem;
+  }
+
+  #quote-text {
+    font-size: 1.1rem;
+  }
+
+  .controls button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .small-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+
+  .social img {
+    width: 24px;
+    height: 24px;
+  }
+}
