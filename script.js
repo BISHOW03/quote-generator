@@ -9,11 +9,19 @@ let quotes = [];
 //   });
 
 fetch('https://bishow03.github.io/quote-generator/data/quotes.json')
-  .then(res => res.json())
+  .then(res => {
+    if (!res.ok) throw new Error('Failed to load quotes');
+    return res.json();
+  })
   .then(data => {
     quotes = data.quotes;
     newQuote();
+  })
+  .catch(err => {
+    console.error(err);
+    alert("Could not load quotes. Please try again later.");
   });
+
 
 // function newQuote() {
 function newQuote() {
