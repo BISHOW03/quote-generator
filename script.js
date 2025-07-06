@@ -1,13 +1,19 @@
 let quotes = [];
 
 // Fetch quotes from JSON
-fetch('data/quotes.json')
+// fetch('data/quotes.json')
+//   .then(res => res.json())
+//   .then(data => {
+//     quotes = data.quotes;
+//     newQuote();
+//   });
+
+fetch('https://bishow03.github.io/quote-generator/data/quotes.json')
   .then(res => res.json())
   .then(data => {
     quotes = data.quotes;
     newQuote();
   });
-
 
 // function newQuote() {
 function newQuote() {
