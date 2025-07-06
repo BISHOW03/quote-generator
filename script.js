@@ -1,7 +1,7 @@
 let quotes = [];
 
 // Fetch quotes from JSON
-fetch('../data/quotes.json')
+fetch('./data/quotes.json')
   .then(res => res.json())
   .then(data => {
     quotes = data.quotes;
