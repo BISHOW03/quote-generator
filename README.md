@@ -34,7 +34,7 @@ A beautifully designed, mobile-friendly **Quote Generator App** that fetches ins
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/quote-generator.git
+git clone https://github.com/BISHOW03/quote-generator.git
 cd quote-generator
 ```
 
