@@ -2,8 +2,6 @@
 
 A beautifully designed, mobile-friendly **Quote Generator App** that fetches inspiring quotes and lets you copy, share, or download them as images.
 
-![Quote Generator Preview](https://github.com/bishow03/quote-generator/raw/main/preview.png)
-
 ---
 
 ## ✨ Features
